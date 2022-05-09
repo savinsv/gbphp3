@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .main {
+    text-align: center;
+    background-color: lightgrey;
+  }
+  h2 {
+    color: darkred;
+    padding-top: 20px;
+  }
+  .products {
+    margin-top: 20px;
+    padding: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+  }
+  .imgbox >a>img {
+      width: 240px;
+      border-radius: 15px;
+      border: solid 2px lightgray;
+  }
+  .img:hover {
+    border-color: grey;
+    border-width: 5px;
+  }
+  .bigImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .image {
+    border-radius: 10px;
+    border: solid 2px lightgray;
+  }
+  .image:hover {
+    border-color: grey;
+    border-width: 4px;
+  }
+  .head {
+    margin-bottom: 15px;
+  }
