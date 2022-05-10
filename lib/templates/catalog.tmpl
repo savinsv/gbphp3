@@ -1,10 +1,10 @@
 <h2>{{header}}</h2><br>
 <div class="products">
-  {% for file in files %}
+  {% for key,file in files %}
     <div class="products-item">
-      <h2 class="head">Картинка</h2>
+      <h2 class="head">Картинка №{{ key+1 }}</h2>
       <div class="imgbox">
-        <a href='?file={{ file }}' target='_self'>
+        <a href='?file={{ file }}&key={{ key+1 }}' target='_self'>
           <img src='{{ images}}{{ file }}' alt='product' class="img">
         </a>
       </div>

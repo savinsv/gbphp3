@@ -27,3 +27,12 @@
         };
         return $files;
     };
+// подключение к бд
+    function connectDb(string $host,string $dbName,string $userName, string $password){
+        try {
+            $dbh = new PDO("mysql:dbname=$dbName;host=$host", $userName, $password);
+        } catch (PDOException $e) {
+            echo "Error: Could not connect. " . $e->getMessage() ."<br>";
+        }
+        return $dbh;
+    }
